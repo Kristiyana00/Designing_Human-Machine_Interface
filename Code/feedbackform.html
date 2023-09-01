@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fast and Furious</title>
+		<meta charset="UTF-8" />
+		<link href="./css/index.css" rel="stylesheet" />
+		<link href="./css/form.css" rel="stylesheet" />
+		<link href="./css/nav.css" rel="stylesheet" />
+	</head>
+	<body>
+		<header class="header">
+			<button class="hamburger"><i class="fa-solid fa-bars"></i></button>
+			<a href="index.html"><img class="logo" src="./images/logo.png" width="194" height="50" /></a>
+			<nav>
+				<ul class="nav">
+					<li><a href="index.html">Начало</a></li>
+					<li><a href="test.html">Тестове</a></li>
+					<li><a href="theory.html">Теория</a></li>
+					<li><a href="feedbackform.html">Обратна връзка</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<section>
+			<form class="form" id="feedback-form">
+				<label>Изпращане на обратна връзка</label>
+				<span class="field-name">Имена</span>
+				<input class="field" type="text" placeholder="Въведете вашите имена" name="name" id="name" />
+				<span class="errorMsg" id="name-err"></span>
+				<span class="field-name">Имейл</span>
+				<input class="field" type="email" placeholder="Въведете вашия имейл" name="email" id="email" />
+				<span class="errorMsg" id="email-err"></span>
+				<span class="field-name">Категория</span>
+				<select class="field" name="category" id="category">
+					<option>Грешка в тест</option>
+					<option>Грешка в теорията</option>
+				</select>
+				<span class="field-name">Вид</span>
+				<select class="field" name="category" id="type">
+					<option>Грешен отговор</option>
+					<option>Грешно изображение</option>
+				</select>
+				<span class="field-name">Подробно описание</span>
+				<textarea class="field" placeholder="Опишете подробно проблема" name="text" id="text"></textarea>
+				<span class="errorMsg" id="text-err"></span>
+				<input class="btn" type="submit" value="Изпрати" name="login" />
+			</form>
+		</section>
+	</body>
+	<script src="./js/feedbackform.js"></script>
+	<script src="https://kit.fontawesome.com/0138e10fbd.js" crossorigin="anonymous"></script>
+	<script src="./js/nav.js"></script>
+</html>
